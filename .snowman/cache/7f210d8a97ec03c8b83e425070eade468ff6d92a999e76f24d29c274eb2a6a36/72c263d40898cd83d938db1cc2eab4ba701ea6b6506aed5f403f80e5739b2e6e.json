@@ -1,0 +1,146 @@
+{
+  "head" : {
+    "vars" : [ "s", "p", "o" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://creativecommons.org/ns#license"
+      },
+      "o" : {
+        "type" : "uri",
+        "value" : "http://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/softwareVersion"
+      },
+      "o" : {
+        "type" : "literal",
+        "value" : "1.0.0"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/dateModified"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-30T23:00:08Z"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/dateModified"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-30T23:13:36Z"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/dateModified"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-30T23:13:38Z"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/dateModified"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-30T23:13:39Z"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/dateModified"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-30T23:13:41Z"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/dateModified"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-30T23:13:45Z"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/dateModified"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-30T23:13:49Z"
+      }
+    }, {
+      "s" : {
+        "type" : "uri",
+        "value" : "http://wikiba.se/ontology#Dump"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://schema.org/dateModified"
+      },
+      "o" : {
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime",
+        "type" : "literal",
+        "value" : "2023-01-30T23:24:45Z"
+      }
+    } ]
+  }
+}

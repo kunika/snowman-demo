@@ -1,0 +1,38 @@
+PREFIX bcwd: <https://bradford-collections.wikibase.cloud/entity/>
+PREFIX bcwds: <https://bradford-collections.wikibase.cloud/entity/statement/>
+PREFIX bcwdv: <https://bradford-collections.wikibase.cloud/value/>
+PREFIX bcwdt: <https://bradford-collections.wikibase.cloud/prop/direct/>
+PREFIX bcp: <https://bradford-collections.wikibase.cloud/prop/>
+PREFIX bcps: <https://bradford-collections.wikibase.cloud/prop/statement/>
+PREFIX bcpq: <https://bradford-collections.wikibase.cloud/prop/qualifier/>
+PREFIX bcpsv: <https://bradford-collections.wikibase.cloud/prop/statement/value/>
+PREFIX bcpqv: <https://bradford-collections.wikibase.cloud/prop/qualifier/value/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX schema: <http://schema.org/> 
+PREFIX wikibase: <http://wikiba.se/ontology#> 
+
+SELECT 
+?dataset
+?datasetLabel
+?datasetDescription
+(GROUP_CONCAT(DISTINCT ?datasetHolderLabel; separator="; ") AS ?datasetHeldBy)
+?datasetDatasheetURL
+(GROUP_CONCAT(DISTINCT ?datasetKeyword; separator="; ") AS ?datasetKeywords)
+WHERE
+{
+  ?dataset bcwdt:P13 bcwd:Q1.
+  OPTIONAL {?dataset bcwdt:P17 ?datasetKeyword.}
+  OPTIONAL {
+    ?dataset bcp:P28 ?datasetHolderStatement.
+    ?datasetHolderStatement bcps:P28 ?datasetHolder.
+  }
+  OPTIONAL {?dataset bcwdt:P24 ?datasetDatasheetURL.}
+  SERVICE wikibase:label { 
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en-gb,en". 
+    ?dataset rdfs:label ?datasetLabel.
+    ?dataset schema:description ?datasetDescription.
+    ?datasetHolder rdfs:label ?datasetHolderLabel.
+  } 
+}
+GROUP BY ?dataset ?datasetLabel ?datasetDescription ?datasetDatasheetURL
+ORDER BY ASC(UCASE(STR(?datasetLabel)))
